@@ -17,13 +17,13 @@ func NewDefaultLogger() *defaultLogger {
 }
 
 func (a *defaultLogger) Infof(msg string, args ...any) {
-	fmt.Printf("[Info] %s\n", args...)
+	fmt.Printf(msg+"\n", args...)
 }
 
 func (a *defaultLogger) Errorf(msg string, args ...any) {
-	fmt.Printf("[Error] %s\n", args...)
+	fmt.Printf(msg+"\n", args...)
 }
 
 func (a *defaultLogger) Warnf(msg string, args ...any) {
-	fmt.Printf("[Warn] %s\n", args...)
+	fmt.Printf(msg+"\n", args...)
 }

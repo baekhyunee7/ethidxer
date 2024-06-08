@@ -35,7 +35,7 @@ func main() {
 	indexer := ethidxer.Builder("example").
 		Db(db).
 		RpcCli(rpcCli).
-		Addrs([]string{"0x5fbdb2315678afecb367f032d93f642f64180aa3"}).
+		Addrs([]string{"0x5fbdb2315678afecb367f032d93f642f64180aa3"}). // replace deployed address
 		Abi(&abi).
 		Build(ethidxer.WithSleepDuration(time.Minute))
 	ethidxer.Register(indexer, "ExampleEvent", func(t1 *Indexed, t2 *Data) error {
