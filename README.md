@@ -89,4 +89,4 @@ func main() {
 * `WithBatchSize` used to determine how many blocks to pull at one time.
 * `WithSleepDuration` used to configure how long it will sleep if no new blocks are generated.
 
-Please see specific examples
+Please see specific [examples](https://github.com/baekhyunee7/ethidxer/tree/main/example)
